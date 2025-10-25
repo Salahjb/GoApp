@@ -26,7 +26,7 @@ jobs:
             restore-keys: |
               ${{ runner.os }}-go-
       - name: Intall SQLite3
-        run: sudp apt-get update && sudo apt-get install -y sqlite3 libsqlite3-dev
+        run: sudo apt-get update && sudo apt-get install -y sqlite3 libsqlite3-dev
 
       - name: Install dependencies
         run: go mod download
